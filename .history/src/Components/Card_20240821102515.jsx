@@ -1,0 +1,24 @@
+import { IoDocumentOutline } from "react-icons/io5";
+import { FiDownload } from "react-icons/fi";
+const Card = () => {
+  return (
+    <div className="w-[16vw] h-[45vh] rounded-[2rem] text-white px-5 py-10 bg-black relative">
+      <IoDocumentOutline />
+      <p className="text-sm font-medium mt-5">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+        aliquied rtfoec{" "}
+      </p>
+      {/* footer   */}
+      <div className="footer  absolute bottom-0 left-0 w-full h-15  ">
+        <div className="flex items-center justify-between p-5">
+          <h5>0.4mb</h5>
+          <span className="w-7 h-7 bg-zinc-500 rounded-full flex-it">
+            <FiDownload />
+          </span>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Card;
